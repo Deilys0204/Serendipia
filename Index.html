@@ -13,23 +13,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+  <!-- Inicio del header -->
   <header class="header">
-    <p>Visítanos o pide tu domicilio aquí</p>
+    <p>¡Un encuentro con el sabor!</p>
   </header>
+
+  <!-- Inicio del nav -->
     <nav>
       <ul class="menu">
         <li class="logo"><a href="Index.html"><img src="img/Serendipia.png" alt="Logo de Serendipia"></a></li>
         <li class="item"><a href="Index.html">Home</a></li>
         <li class="item"><a href="#nosotros">Nosotros</a></li>
-        <li class="item"><a href="#">Productos</a></li>
-        <li class="item"><a href="#">Domicilios</a></li>
-        <li class="item"><a href="#">Ubicación</a></li>
+        <li class="item"><a href="#productos">Productos</a></li>
+        <li class="item"><a href="#domicilios">Domicilios</a></li>
+        <li class="item"><a href="#location-section">Ubicación</a></li>
         <li class="toggle"><a href="#"><i class="fa fa-bars fa-lg"></i></a></li>
-        <li><a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
       </ul>
       </ul>
     </nav>
-  <!--Clase para crear el carrusel de fotos-->
+  <!-- Fin del nav -->
+
+  <!-- Clase para crear el carrusel de fotos -->
   <div class="carousel-container">
     <div class="carousel">
       <img src="img/foto.jpg" alt="Carousel image 1">
@@ -41,6 +45,8 @@
        <div class="carousel-indicators"></div>
        </div>
   </div>
+
+  <!-- Sección sobre nosotros -->
   <section class="nosotros" id="nosotros">
     <div class="contenido">
       <h1 class="h1">Sobre Nosotros</h1>
@@ -54,19 +60,148 @@
         Serendipia. La casa rosada te espera con sus brazos abiertos, sus tortas irresistibles y la promesa de momentos inolvidables. <br> 
          </p>
     </div>
-        <img src="img/redvelvet.jpeg" alt="torta">
+        <img src="img/foto3.jpg" alt="torta">
   </section>
-    
-  <section class="products" id="productos">
-    <h1 class="h1">productos</h1>
-      <p><br> 
-            </p>
-                <img src="img/redvelvet.jpeg" alt="torta">
 
+  <!-- Sección de galeria con fotos -->
+  <section class="galeria-fotos">
+    <h1>Nuestras Fotos</h1>
+    <div class="contenedor-fotos">
+      <img src="img/foto7.jpg" alt="">
+      <img src="img/foto8.jpg" alt="">
+      <img src="img/foto9.jpg" alt="">
+      <img src="img/foto10.jpg" alt="">
+      <img src="img/foto11.jpg" alt="">
+      <img src="img/foto12.jpg" alt="">
+      <img src="img/foto13.jpg" alt="">
+      <img src="img/foto14.jpg" alt="">
+      <img src="img/foto15.jpg" alt="">
+    </div>
+  </section>
 
+  <!-- Sección de Productos -->
+  <section class="productos" id="productos">
+    <div class="contenido-productos">
+      <h1 class="h1">Nuestros productos</h1>
+      <div class="row">
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#"><img src="img/foto4.jpg" class="rounded-circle img-fluid border"></a>
+            <h2 class="text-center mt-3 mb-3">Bebidas</h5>
+        </div>
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#"><img src="img/foto6.jpg" class="rounded-circle img-fluid border"></a>
+            <h2 class="h5 text-center mt-3 mb-3">Tortas</h2>
+        </div>
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#"><img src="img/foto5.jpg" class="rounded-circle img-fluid border"></a>
+            <h2 class="h5 text-center mt-3 mb-3">Desayunos</h2>
+        </div>
+        <div class="text-center mt-5"> <button class="ver-mas-btn">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección domicilios -->
+  <section class="domicilios-container" id="domicilios">
+    <h1 class="domicilios-title">Domicilios</h1>
+    <p>Selecciona una opción</p>
+    <div class="domicilios-iconos"> 
+      <i class="fab fa-whatsapp domicilios-icon"></i>
+      <i class="fas fa-shopping-cart domicilios-icon"></i>
+    </div>
+    <div class="domicilios-options">
+      <button class="domicilios-button">
+        Pide tu domicilio por WhatsApp
+      </button>
+      <button class="domicilios-button">
+        Pide tu domicilio en línea
+      </button>
+    </div>
+  </section>
+
+  <!-- Ubicación -->
+  <section class="location" id="location-section">
+    <h1>Ubicación</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.611907667649!2d-75.28550542502971!3d2.9273698970489757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b747b9f16d919%3A0x2ef43d1640f99a5b!2sSerendipia!5e0!3m2!1ses-419!2sco!4v1713467266230!5m2!1ses-419!2sco" width="1700" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  
+  <!-- Inicio del footer -->
+  <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Serendipia</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            Cl. 6 # 11-21, Neiva, Huila
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">+57-3043318937</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Menú</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Home</a></li>
+                        <li><a class="text-decoration-none" href="#">Nosotros</a></li>
+                        <li><a class="text-decoration-none" href="#">Productos</a></li>
+                        <li><a class="text-decoration-none" href="#">Domicilios</a></li>
+                        <li><a class="text-decoration-none" href="#">Ubicación</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Email address</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Subscribe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            @Copyright &copy; 2024 Serendipia
+                            | Designed by <a rel="sponsored" target="_blank">Deily Soto</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin del footer -->
+
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/menu-scroll.js"></script>
   <script src="js/carrusel.js"></script>
+
 </body>
 </html>

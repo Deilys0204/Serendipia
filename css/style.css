@@ -1,20 +1,11 @@
 /* Fuentes */
 
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gloria+Hallelujah&display=swap'); /*Se importa una fuente nueva*/
 
 .pangolin-regular {
   font-family: "Pangolin", cursive;
   font-weight: 3em;
   font-style: normal;
-}
-
-.gloria-hallelujah-regular {
-  font-family: "Gloria Hallelujah", cursive;
-  font-weight: 5em;
-  font-style: normal;
-  font-size: 5em;
-  margin-left: 1em; 
 }
 
 * {
@@ -30,7 +21,7 @@
 }
 
 .header p {
-  color: grey;
+  color: black;
 }
 
 body {
@@ -39,8 +30,8 @@ body {
 }
 
 nav {
-  background: #FFAFE3;
-  padding: 0.3125em 3em; /* 5px / 16px, 20px / 16px */
+  background: linear-gradient(70deg, #FFAFE3, pink);
+  padding: 0.3125em 6em 0 6em; 
 }
 
 .logo img {
@@ -67,8 +58,8 @@ a:hover {
 }
 
 .menu li {
-  font-size: 1.1em; /* 16px / 16px */
-  padding: 0.5em 1em !important; /* 15px / 16px, 5px / 16px */
+  font-size: 1.1em; 
+  padding: 0.5em 1em !important; 
   white-space: nowrap;
 }
 
@@ -142,7 +133,7 @@ a:hover {
   }
 
   .menu li {
-    padding: 0.9375em 0.625em; /* 15px / 16px, 10px / 16px */
+    padding: 0.9375em 0.625em; 
   }
 
   .menu li.button {
@@ -151,13 +142,14 @@ a:hover {
   
 }
 
+/* Inicia estilos sección nosotros */
 .nosotros {
   text-align: center;
   width: 100%;
-  height: auto; /* Cambiado a auto para adaptarse al contenido */
-  background-color: #FFAFE3;
+  height: auto; 
+  background: linear-gradient(70deg, #FFAFE3, pink, rgb(255, 239, 246));
   display: grid;
-  grid-template-columns: 1fr; /* Solo una columna en pantallas pequeñas */
+  grid-template-columns: 1fr;
   gap: 1.25em;
   padding: 1.5em;
 }
@@ -171,20 +163,21 @@ a:hover {
 .contenido h1 {
   font-size: 4em;
   text-align: center;
-  padding: 0; /* Ajuste de padding: arriba/abajo, derecha/izquierda */
-  margin: 0; /* Eliminar el margen predeterminado del encabezado */
-  color: #c9126a; /* Color de texto rosado oscuro */
+  padding: 0; 
+  margin: 0; 
+  color: #c9126a; 
+  text-shadow: 8px 10px 7px grey;
 }
 
 .contenido p {
   font-size: 1.1em;
   text-align: center;
-  padding: 0.6em 3em; /* Ajuste de padding: arriba/abajo, derecha/izquierda */
+  padding: 0.6em 3em; 
 }
 
 .nosotros img {
-  width: 70%; /* Ancho de la imagen en relación con el contenedor padre */
-  height: 30em; /* Altura automática para mantener la proporción */
+  width: 70%; 
+  height: 30em; 
   border-radius: 50%;
   box-shadow: 0px 0px 0.625em rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
@@ -197,14 +190,391 @@ a:hover {
 
 @media screen and (min-width: 600px) {
   .nosotros {
-    grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas más grandes */
+    grid-template-columns: 1fr 1fr; 
   }
 
   .contenido {
-    order: 2; /* Cambia el orden en pantallas más grandes */
+    order: 2; 
   }
 
   .nosotros img {
     width: 30em;
   }
 }
+
+.fadeIn {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animación para la sección */
+.nosotros .contenido {
+  animation: fadeIn 2s ease-in-out 0.5s both; 
+}
+
+.nosotros img {
+  animation: fadeIn 2s ease-in-out 1s both;
+}
+
+/* Inicia estilos sección productos */
+.productos {
+  text-align: center;
+  width: 100%;
+  height: auto; 
+  background: linear-gradient(70deg, #FFAFE3, pink, rgb(255, 239, 246));
+  padding: 0.5em; 
+}
+
+/* Imágenes de destino dentro de columnas */
+.col-12 img,
+.col-md-4 img {
+  width: 33.33%; 
+  box-sizing: border-box; 
+  padding: 0; 
+  width: 75%; 
+  height: 24em;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0.625em rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  margin: auto;
+}
+
+.contenido-productos h1 {
+  font-size: 4em;
+  text-align: center; 
+  margin: 0.5em;
+  color: #c9126a; 
+  text-shadow: 5px 8px 7px grey;
+}
+
+.contenido-productos h2 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-shadow: 8px 10px 7px grey;
+}
+
+.row {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-evenly; 
+  margin: 0 auto; 
+  padding: 0; 
+}
+
+.col-12,
+.col-md-4 {
+  width: 33.33%; 
+  box-sizing: border-box; 
+  padding: 0; 
+}
+
+@media (max-width: 768px) { 
+  .col-12,
+  .col-md-4 {
+    width: 100%; 
+  }
+}
+
+.col-12 img:hover,
+.col-md-4 img:hover {
+  filter: grayscale(100%);
+}
+
+.ver-mas-btn {
+  background: #c9126a;
+  color: white; 
+  padding: 1em 2em; 
+  border: none; 
+  border-radius: 5px; 
+  display: block; 
+  margin: 1em auto; 
+  transition: background-color 0.3s ease; 
+  font-family: "Pangolin", cursive;
+  font-size: 1em;
+}
+
+.ver-mas-btn:hover { 
+  background-color:#ff5ac5;
+  ; 
+}
+
+/* Inicio estilos sección Ubicación */
+.location {
+  align-items: center;
+  width: 100%;
+  height: auto; 
+  background: linear-gradient(70deg, #FFAFE3, pink, rgb(255, 239, 246));
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25em;
+  padding: 1.5em;
+}
+
+.location h1 {
+  font-size: 4em;
+  text-align: center; 
+  margin: 0;
+  color: #c9126a; 
+  text-shadow: 8px 10px 7px grey;
+}
+
+.location iframe {
+  width: 100%; 
+  height: 300px;
+}
+
+@media screen and (max-width: 1024px) {
+  .location iframe {
+    width: 90%; 
+    height: 30em; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .location iframe {
+    width: 80%; 
+    height: 250px; 
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .location iframe {
+    width: 100%; 
+    height: 100% auto;
+  }
+}
+
+/* Inicio estilos domicilios */
+.domicilios-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  background: linear-gradient(70deg, rgb(255, 239, 246), rgb(255, 255, 218));
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.domicilios-title {
+  font-size: 4em;
+  text-align: center; 
+  margin: 0;
+  color: #c9126a; 
+  text-shadow: 8px 10px 7px grey;
+}
+
+.domicilios-container p {
+  padding-bottom: 3em;
+}
+
+.domicilios-options-container {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 2em; 
+}
+
+.domicilios-option {
+  position: relative;
+  text-align: center;
+}
+
+.domicilios-icon {
+  font-size: 3em; 
+  margin-right: 5em; 
+  color: #333; 
+}
+
+
+.fab.fa-whatsapp {
+  color: black; 
+  padding: 0 3em 0 8.5em;
+}
+
+
+.fas.fa-shopping-cart {
+  color: black; 
+  padding: 0 3em 0 0.5em;
+}
+
+.domicilios-button {
+  background-color: #c9126a;
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 2em 6em;
+}
+
+.domicilios-button:hover {
+  background-color: #ff5ac5;
+}
+
+
+/* Estilos para la galería */
+.galeria-fotos {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  background: linear-gradient(70deg, rgb(255, 239, 246), rgb(255, 255, 218));
+  opacity: 0.95; 
+  border: 10px solid transparent; 
+  box-sizing: border-box; 
+  position: relative; 
+  transition: all 0.5s ease; 
+}
+
+.galeria-fotos h1 {
+  font-size: 4em;
+  text-align: center;
+  margin: 0.5em;
+  color: #c9126a;
+  text-shadow: 8px 10px 7px grey;
+  transition: all 0.3s ease; 
+}
+
+.contenedor-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+.contenedor-fotos img {
+  width: calc(33.33% - 1em); 
+  height: auto; 
+  margin: 1em;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  aspect-ratio: 1/1; 
+  object-fit: cover; 
+  transition: all 0.3s ease; 
+  cursor: pointer; 
+}
+
+.contenedor-fotos img:hover {
+  transform: scale(1.1);
+  opacity: 0.8; 
+  border: 2px solid #c9126a; 
+}
+
+@media (min-width: 768px) {
+  .contenedor-fotos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .contenedor-fotos img {
+    width: calc(33.33% - 1em);
+    height: auto;
+    margin: 1em 0.5em;
+  }
+}
+
+@media (max-width: 767px) {
+  .contenedor-fotos img {
+    width: 100%; /* Ancho de las fotos en una columna */
+    margin: 0.5em auto; /* Centra las fotos horizontalmente */
+  }
+}
+
+/* Footer Styles */
+
+footer#tempaltemo_footer {
+  background-color: #c9126a; /* Black background */
+  color: #f5f5f5; /* Light text color */
+  padding: 0 0; /* Padding for top and bottom */
+}
+
+footer .container {
+  max-width: 70em; /* Limit container width */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+footer h2 {
+  margin-top: 1em;
+  margin-bottom: 1em; /* Margin for headings */
+  border-bottom: 0.1em solid #e0e0e0; /* Light border for headings */
+  padding-bottom: 0.5em; /* Padding for headings */
+}
+
+footer ul.footer-link-list {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+footer ul.footer-link-list li {
+  margin-bottom: 0.5em; /* Margin for list items */
+}
+
+footer ul.footer-link-list a {
+  color: inherit; /* Inherit text color from footer */
+  text-decoration: none; /* Remove underline from links */
+}
+
+footer .footer-icons li {
+  display: inline-block; /* Display icons inline */
+  margin-right: 0.5em; /* Spacing between icons */
+}
+
+footer .footer-icons li a {
+  color: inherit; /* Inherit text color from footer */
+}
+
+footer .footer-icons li.list-inline-item {
+  width: 2.5em; /* Width for social media icons */
+  height: 2.5em; /* Height for social media icons */
+  line-height: 2.5em; /* Center icon vertically */
+  text-align: center; /* Center icon horizontally */
+}
+
+footer .input-group {
+  width: 100%; /* Make the input group full width */
+}
+
+footer .form-control {
+  background-color: white; /* Transparent background for input field */
+  border-color: #e0e0e0; /* Light gray border for input field */
+  color: #fff; /* White text color for input field */
+  padding: 0.75em 1em; /* Padding for input field */
+  border-radius: 0.25em; /* Rounded corners for input field */
+}
+
+footer .form-control:focus {
+  border-color: #28a745; /* Green border on focus */
+  box-shadow: 0 0 0 0.1em rgba(40, 167, 69, 0.5); /* Green outline on focus */
+}
+
+footer .input-group-text {
+  background-color: #28a745; /* Green color for subscribe button */
+  border-color: #28a745; /* Green border for subscribe button */
+  color: #fff; /* White text color for subscribe button */
+  padding: 0.75em 1em; /* Padding for subscribe button */
+  border-radius: 0.25em; /* Rounded corners for subscribe button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+footer > div:last-child {
+  padding: 0; /* Change padding values as needed */
+  margin: 0;
+}
+
+
