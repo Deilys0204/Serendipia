@@ -391,13 +391,13 @@ a:hover {
 .domicilios-icon {
   font-size: 3em; 
   margin-right: 5em; 
-  color: #333; 
+  color: #333;
 }
 
 
 .fab.fa-whatsapp {
   color: black; 
-  padding: 0 3em 0 8.5em;
+  padding: 0 3em 1em 8.5em;
 }
 
 
@@ -415,7 +415,8 @@ a:hover {
   font-size: 1em; 
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin: 2em 6em;
+  margin: 3em 6em;
+  margin-top: 15em;
 }
 
 .domicilios-button:hover {
