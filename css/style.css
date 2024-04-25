@@ -49,7 +49,9 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  color: white; /* Change text color to dark gray on hover */
+  opacity: 0.8; /* Make text slightly transparent on hover */
+  transition: color 0.3s ease, opacity 0.3s ease; /* Smooth transition effect */
 }
 
 .logo a:hover {
@@ -366,9 +368,9 @@ a:hover {
 
 .domicilios-title {
   font-size: 4em;
-  text-align: center; 
+  text-align: center;
   margin: 0;
-  color: #c9126a; 
+  color: #c9126a;
   text-shadow: 8px 10px 7px grey;
 }
 
@@ -377,10 +379,10 @@ a:hover {
 }
 
 .domicilios-options-container {
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: center; 
-  gap: 2em; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
 }
 
 .domicilios-option {
@@ -389,20 +391,20 @@ a:hover {
 }
 
 .domicilios-icon {
-  font-size: 3em; 
-  margin-right: 5em; 
+  font-size: 3em;
+  margin-right: 5em;
   color: #333;
 }
 
 
 .fab.fa-whatsapp {
-  color: black; 
+  color: black;
   padding: 0 3em 1em 8.5em;
 }
 
 
 .fas.fa-shopping-cart {
-  color: black; 
+  color: black;
   padding: 0 3em 0 0.5em;
 }
 
@@ -412,7 +414,7 @@ a:hover {
   padding: 1em 2em;
   border: none;
   border-radius: 5px;
-  font-size: 1em; 
+  font-size: 1em;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin: 3em 6em;
@@ -423,6 +425,33 @@ a:hover {
   background-color: #ff5ac5;
 }
 
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+  .domicilios-options-container {
+    flex-direction: column; /* Stack options vertically */
+    gap: 1em; /* Adjust spacing between options */
+  }
+
+  .domicilios-option {
+    margin-bottom: 1em; /* Add space between options */
+  }
+
+  .domicilios-icon {
+    margin-bottom: 1em; /* Adjust spacing between icon and text */
+  }
+
+  .fab.fa-whatsapp,
+  .fas.fa-shopping-cart {
+    padding: 0.5em; /* Adjust padding for better alignment */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .domicilios-button {
+    margin: 2em 0; /* Remove left/right margins for single column */
+  }
+}
 
 /* Estilos para la galería */
 .galeria-fotos {
