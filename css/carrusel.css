@@ -1,0 +1,78 @@
+/*Contenedor del carrusel*/
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0; /* Elimina la margen derecha */
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+/*Función del carrusel*/
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+/*Imágenes del carrusel*/
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/*Define el estilo de la base del contenedor de los indicadores*/
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+/*Define el estilo de los indicadores*/
+.carousel-indicator {
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+}
+
+.carousel-indicator.active {
+  background-color: #ff6cb8;
+}
+
+/*Define el estilo de los botones previo y siguiente*/
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 24px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  
+}
+
+.carousel-prev {
+  left: 20px;
+}
+
+.carousel-next {
+  right: 20px;
+}

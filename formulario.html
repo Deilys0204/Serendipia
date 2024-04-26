@@ -1,0 +1,199 @@
+<!-- 
+     PROYECTO PROGRAMACIÓN WEB
+     Dev: Deily Catherine Soto Rodríguez
+     Universidad Surcolombiana
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Serendipia</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/form-pago.css">
+    <link rel="stylesheet" href="css/scroll-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <!-- Inicio del header -->
+  <header class="header">
+    <p>¡Un encuentro con el sabor!</p>
+  </header>
+
+  <!-- Inicio del nav -->
+  <nav>
+    <ul class="menu">
+      <li class="logo"><a href="Index.html"><img src="img/Serendipia.png" alt="Logo de Serendipia"></a></li>
+      <li class="item"><a href="Index.html">Home</a></li>
+      <li class="item"><a href="#nosotros">Nosotros</a></li>
+      <li class="item"><a href="#productos">Productos</a></li>
+      <li class="item"><a href="#domicilios">Domicilios</a></li>
+      <li class="item"><a href="#location-section">Ubicación</a></li>
+      <li class="item carrito">
+        <a href="#" id="cartBtn">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="cart-badge">0</span> </a>
+      </li>
+      <li class="toggle"><a href="#"><i class="fa fa-bars fa-lg"></i></a></li>
+    </ul>
+    </ul>
+  </nav>
+  <!-- Fin del nav -->
+
+  <!-- Inicio de la Modal Carrito Compras -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Tu carrito</h2>
+      <hr>
+      <table id="cartTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Total</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      <div class="botones-container">
+        <button class="pagar-btn">Pagar</button>
+        <button class="cerrar-btn">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <h1>Formulario de Pago</h1>
+  <form id="payment-form">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" required><br>
+
+    <label for="tarjeta">Número de Tarjeta:</label>
+    <input type="text" id="tarjeta" name="tarjeta" required><br>
+
+    <label for="tipo-pago">Tipo de Pago:</label>
+    <select id="tipo-pago" name="tipo-pago" required>
+      <option value="seleccione">Seleccione</option>
+      <option value="credito">Tarjeta de Crédito</option>
+      <option value="debito">Tarjeta de Débito</option>
+      <option value="paypal">PayPal</option>
+      <option value="efectivo">Efectivo</option>
+    </select><br>
+
+    <label for="pais">País:</label>
+    <input type="text" id="pais" name="pais" required><br>
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" required><br>
+
+    <label for="ciudad">Ciudad:</label>
+    <input type="text" id="ciudad" name="ciudad" required><br>
+
+    <label for="barrio">Barrio:</label>
+    <input type="text" id="barrio" name="barrio"><br>
+
+    <label for="otro">Otro:</label>
+    <input type="text" id="otro" name="otro"><br>
+
+    <label for="celular">Celular:</label>
+    <input type="tel" id="celular" name="celular" required><br>
+
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" id="correo" name="correo" required><br>
+
+    <button type="submit" id="pagar-btn">Pagar</button>
+  </form>
+
+  <!-- Inicio del footer -->
+  <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Serendipia</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            Cl. 6 # 11-21, Neiva, Huila
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="">+57 3043318937</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Menú</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="Index.html">Home</a></li>
+                        <li><a class="text-decoration-none" href="#nosotros">Nosotros</a></li>
+                        <li><a class="text-decoration-none" href="#productos">Productos</a></li>
+                        <li><a class="text-decoration-none" href="#domicilios">Domicilios</a></li>
+                        <li><a class="text-decoration-none" href="#location-section"></a>Ubicación</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.facebook.com/SerendipiaNeiva"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/serendipianeiva?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Email</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Suscribirse</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            @Copyright &copy; 2024 Serendipia
+                            | Designed by <a rel="sponsored" target="_blank">Deily Soto</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin del footer -->
+
+  <!-- Scripts -->
+  <script src="js/form-pago.js"></script>
+  <script src="js/modal-shop.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/menu-scroll.js"></script>
+  <script src="js/carrusel.js"></script>
+
+</body>
+</html>
