@@ -199,6 +199,11 @@ th {
   cursor: pointer;
 }
 
+.botones-container {
+  display: flex; 
+  justify-content: space-between; 
+}
+
 .cerrar-btn {
   display: block;
   margin: 1.5em auto;
@@ -229,6 +234,18 @@ th {
   background-color: #45a049;
 }
 
+.eliminar {
+  background-color: #a51b1b; /* Color de fondo */
+  color: #ffffff; /* Color del texto */
+  border: none; /* Quitar borde */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+.eliminar:hover {
+  background-color: #cc00009b; /* Color de fondo al pasar el cursor */
+}
 
 /* Inicia estilos sección nosotros */
 .nosotros {
