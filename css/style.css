@@ -49,9 +49,9 @@ a {
 }
 
 a:hover {
-  color: white; /* Change text color to dark gray on hover */
-  opacity: 0.8; /* Make text slightly transparent on hover */
-  transition: color 0.3s ease, opacity 0.3s ease; /* Smooth transition effect */
+  color: white; 
+  opacity: 0.8; 
+  transition: color 0.3s ease, opacity 0.3s ease; 
 }
 
 .logo a:hover {
@@ -213,6 +213,8 @@ th {
   border: none;
   border-radius: 0.3em;
   cursor: pointer;
+  font-family: "Pangolin", cursive;
+  font-size: 1em;
 }
 
 .cerrar-btn:hover {
@@ -235,11 +237,11 @@ th {
 }
 
 .eliminar {
-  background-color: #a51b1b; /* Color de fondo */
-  color: #ffffff; /* Color del texto */
-  border: none; /* Quitar borde */
-  padding: 5px 10px; /* Espaciado interno */
-  border-radius: 5px; /* Borde redondeado */
+  background-color: #a51b1b; 
+  color: #ffffff; 
+  border: none; 
+  padding: 5px 10px; 
+  border-radius: 5px; 
   cursor: pointer; /* Cambiar cursor al pasar por encima */
 }
 

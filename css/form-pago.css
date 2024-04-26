@@ -1,0 +1,104 @@
+body {
+    font-family: "Pangolin", cursive;
+    background: linear-gradient(70deg, rgb(255, 239, 246), rgb(255, 255, 218));
+  }
+  
+  #payment-form {
+    max-width: 31.25em;
+    margin: 1.25em auto;
+    background-color: #fff;
+    padding: 1.25em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 3em;
+    text-align: center;
+    padding: 0;
+    margin: 0.5em auto;
+    color: #c9126a;
+    text-shadow: 5px 8px 7px grey;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.3125em;
+    color: black;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 0.625em;
+    margin-bottom: 0.625em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.3125em;
+    box-sizing: border-box;
+  }
+  
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-size: 1em;
+  }
+  
+  button[type="submit"] {
+    background-color: #179c17;
+    color: #fff;
+    border: none;
+    border-radius: 0.3125em;
+    padding: 0.625em 1.25em;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    font-family: "Pangolin", cursive;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #07b427;
+  }
+
+  #custom-alert {
+    display: none; /* Hide the alert initially */
+    position: fixed; /* Position it relative to the viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the alert */
+    z-index: 1000; /* Ensure it's on top of other elements */
+    background-color: #3dd050; /* Light background color */
+    border: 1px solid #36801b; /* Border for visual separation */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  }
+  
+  .alert-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .alert-message {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .alert-close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-left: 20px;
+  }
+  
+  .alert-close:hover {
+    background-color: #eee;
+  }
+  
