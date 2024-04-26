@@ -74,9 +74,10 @@ document.addEventListener("DOMContentLoaded", function() {
     cartTableBody.appendChild(filaTotal);
   }
 
-  // Function to format price to display in thousands (COP)
+  // Función para ajustar el precio con tres digitos decimales
   function formatPrice(price) {
-    return `$${price.toFixed(2)}`;
+    const fixedPrice = Math.round(price * 1000) / 1000;
+    return `$${fixedPrice.toFixed(3)}`;
   }
 
   modal.addEventListener('click', function(event) {
