@@ -1,0 +1,134 @@
+/*Estilos Tienda*/
+
+.shop {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em auto; 
+    padding: 1em; 
+    background: beige;
+    align-items: center;
+  }
+
+.sidebar {
+    height: 40em;
+    width: 15em;
+    float: left;
+    background-image: linear-gradient(180deg, #FFAFE3, pink);
+    color: black;
+    text-align: center;
+    padding: 3em;
+    margin: 1em auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 1em;
+  }
+  
+  .sidebar li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .sidebar li a:hover {
+    color: #c9126a;
+  }
+
+  .product-grid {
+    width: calc(100% - 18em); 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 1em auto;
+  }
+
+  .product {
+    width: 30%;
+    float: right;
+    margin: 0 1%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .product:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .product img {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .product-info {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .product-price {
+    color: #c9126a;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .rating {
+    color: gold;
+    font-size: 1.1em;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center; 
+    margin-top: 1em; 
+    margin-bottom: 1em;
+  }
+  
+  .pagination-link {
+    color: black; 
+    text-decoration: none;
+    padding: 0.5em 1em; 
+    background-color: #FFAFE3; 
+    border: 1px solid #FFAFE3; 
+    margin: 0.25em; 
+  }
+  
+  .pagination-link.active {
+    background-color: #c9126a ; 
+    border-color: #FFAFE3; 
+  }
+  
+  .product-info button {
+    background-color: #388e3c; 
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 1em;
+    font-family: "Pangolin", cursive;
+    font-size: 1em;
+  
+    &:hover {
+      background-color: #2e7d32;
+    }
+  }
+
+  
+
+
+

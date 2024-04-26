@@ -1,0 +1,25 @@
+/* Target Chrome, Safari, etc. */
+::-webkit-scrollbar {
+  width: 6px; 
+}
+
+/* Target Firefox */
+scrollbar {
+  width: 6px; 
+}
+
+/* Target Microsoft Edge */
+::-webkit-scrollbar {
+  width: 6px; 
+}
+
+/* Target scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Target scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
