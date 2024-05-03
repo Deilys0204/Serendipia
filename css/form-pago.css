@@ -9,7 +9,7 @@ body {
     background-color: #fff;
     padding: 1.25em;
     border-radius: 0.5em;
-    box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   }
   
   h1 {
@@ -34,16 +34,18 @@ body {
     width: 100%;
     padding: 0.625em;
     margin-bottom: 0.625em;
-    border: 0.0625em solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 0.3125em;
     box-sizing: border-box;
+    transition: border-color 0.3s ease;
   }
   
   select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-size: 1em;
+    background-size: 2em;
+    
   }
   
   button[type="submit"] {
