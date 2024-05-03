@@ -35,7 +35,7 @@
         <li class="item"><a href="../Index.html">Ubicación</a></li>
         <li class="item carrito">
           <a href="#" id="cartBtn">
-            <i class="fa fa-shopping-cart"></i>
+            <i class="fa fa-shopping-cart fa-lg"></i>
             <span class="cart-badge">0</span> </a>
         </li>
         <li class="toggle"><a href="#"><i class="fa fa-bars fa-lg"></i></a></li>
@@ -93,10 +93,26 @@
     <div class="product">
         <img src="../img/foto33.jpg" alt="Changua">
         <div class="product-info">
-          <p>Changua</p>
+          <p class="product-name">Changua</p>
+          <p class="product-description">Disfruta de la auténtica tradición colombiana con nuestra Changua. 
+            Este reconfortante plato es una delicia para el desayuno que te envolverá en una sensación de calidez y satisfacción desde el primer sorbo. 
+            Preparada con caldo de leche, huevos escalfados y hierbas frescas, nuestra Changua es una combinación única de sabores suaves y aromas reconfortantes. 
+            Cada cucharada te transportará a los hogares colombianos, donde este plato se disfruta como un símbolo de tradición y hospitalidad. 
+            En nuestro restaurante, te invitamos a probar la autenticidad y el sabor de nuestra Changua colombiana.</p>
           <div class="rating">★★★★★</div>
           <p class="product-price">$11.000</p>
           <button data-id="18">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="product-modal" id="productModal">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          <img id="modalImg" src="" alt="">
+          <div id="modalContent">
+            <p id="modalName"></p>
+            <p id="modalDescription"></p>
+          </div>
         </div>
       </div>
   </div>
@@ -174,6 +190,7 @@
      <!--Fin del footer -->
 
   <!-- Scripts -->
+  <script src="../js/modal-descripcion.js"></script>
   <script src="../js/modal-shop.js"></script>
   <script src="../js/paginacion.js"></script>
   <script src="../js/carrito.js"></script>

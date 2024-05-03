@@ -35,7 +35,7 @@
         <li class="item"><a href="../Index.html">Ubicación</a></li>
         <li class="item carrito">
           <a href="#" id="cartBtn">
-            <i class="fa fa-shopping-cart"></i>
+            <i class="fa fa-shopping-cart fa-lg"></i>
             <span class="cart-badge">0</span> </a>
         </li>
         <li class="toggle"><a href="#"><i class="fa fa-bars fa-lg"></i></a></li>
@@ -93,10 +93,24 @@
     <div class="product">
       <img src="../img/foto34.jpg" alt="Muesli">
       <div class="product-info">
-        <p>Muesli</p>
+        <p class="product-name">Muesli</p>
+        <p class="product-description">Deléitate con la frescura y la nutrición de nuestro muesli. 
+          Este saludable y delicioso plato es una mezcla equilibrada de copos de avena, frutas secas, nueces y semillas, todo ello combinado con yogur o leche para crear un desayuno nutritivo y satisfactorio. 
+          Cada bocado es una explosión de sabores y texturas, ofreciendo una experiencia deliciosa que te dejará energizado para enfrentar el día. 
+          En nuestro restaurante, te invitamos a disfrutar de la versatilidad y el sabor revitalizante de nuestro muesli.</p>
         <div class="rating">★★★★★</div>
         <p class="product-price">$17.000</p>
         <button data-id="19">Añadir al carrito</button>
+      </div>
+    </div>
+    <div class="product-modal" id="productModal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <img id="modalImg" src="" alt="">
+        <div id="modalContent">
+          <p id="modalName"></p>
+          <p id="modalDescription"></p>
+        </div>
       </div>
     </div>
   </div>
@@ -174,6 +188,7 @@
      <!--Fin del footer -->
 
   <!-- Scripts -->
+  <script src="../js/modal-descripcion.js"></script>
   <script src="../js/modal-shop.js"></script>
   <script src="../js/paginacion.js"></script>
   <script src="../js/carrito.js"></script>

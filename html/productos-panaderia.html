@@ -35,7 +35,7 @@
         <li class="item"><a href="../Index.html">Ubicación</a></li>
         <li class="item carrito">
           <a href="#" id="cartBtn">
-            <i class="fa fa-shopping-cart"></i>
+            <i class="fa fa-shopping-cart fa-lg"></i>
             <span class="cart-badge">0</span> </a>
         </li>
         <li class="toggle"><a href="#"><i class="fa fa-bars fa-lg"></i></a></li>
@@ -93,7 +93,11 @@
     <div class="product">
         <img src="../img/foto22.jpg" alt="Croissant">
         <div class="product-info">
-          <p>Croissant</p>
+          <p class="product-name">Croissant</p>
+          <p class="product-description">Deléitate con la perfección francesa en cada bocado de nuestro croissant. 
+            Con su exterior crujiente y su interior suave y esponjoso, cada mordisco es una experiencia de indulgencia pura. 
+            Disfruta del sabor clásico y la textura inigualable de este icónico pastelillo. 
+            En nuestro restaurante, te invitamos a descubrir la auténtica excelencia de un croissant preparado con maestría.</p>
           <div class="rating">★★★★★</div>
           <p class="product-price">$8.000</p>
           <button data-id="7">Añadir al carrito</button>
@@ -103,7 +107,12 @@
       <div class="product">
         <img src="../img/foto23.jpg" alt="Tostadas Francesas">
         <div class="product-info">
-          <p>Tostadas Francesas</p>
+          <p class="product-name">Tostadas Francesas</p>
+          <p class="product-description">
+            Disfruta de un clásico desayuno reconfortante con nuestras Tostadas Francesas. 
+            Cada rebanada de pan empapada en una mezcla de huevos, leche y especias, cocida a la perfección y dorada hasta obtener un delicioso exterior crujiente. 
+            Coronadas con mantequilla derretida y un toque de jarabe de arce, estas tostadas son el epítome del comfort food. 
+            En nuestro restaurante, te invitamos a deleitarte con la indulgencia y el sabor reconfortante de nuestras Tostadas Francesas.</p>
           <div class="rating">★★★★★</div>
           <p class="product-price">$16.000</p>
           <button data-id="8">Añadir al carrito</button>
@@ -113,7 +122,12 @@
       <div class="product">
         <img src="../img/foto26.jpg" alt="Crookies">
         <div class="product-info">
-          <p>Crookies</p>
+          <p class="product-name">Crookies</p>
+          <p class="product-description">Los Crookies son una deliciosa fusión de dos clásicos favoritos: los croissants y las galletas. 
+            Con su exterior crujiente y su interior suave y mantecoso, estas galletas ofrecen lo mejor de ambos mundos. 
+            Cada bocado es una experiencia de sabor única, con notas de mantequilla, almendra y un toque de dulzura. 
+            Perfectas para disfrutar en cualquier momento del día, ya sea con una taza de café por la mañana o como un dulce tentempié por la tarde. 
+            En nuestro restaurante, te invitamos a descubrir la magia de los Crookies y a deleitarte con su exquisito sabor.</p>
           <div class="rating">★★★★★</div>
           <p class="product-price">$12.000</p>
           <button data-id="11">Añadir al carrito</button>
@@ -123,10 +137,25 @@
       <div class="product">
         <img src="../img/foto29.jpg" alt="Focaccia de Aguacate">
         <div class="product-info">
-          <p>Focaccia de Aguacate</p>
+          <p class="product-name">Focaccia de Aguacate</p>
+          <p class="product-description">Deléitate con nuestra exquisita Focaccia de Aguacate, una fusión única de sabores frescos y texturas irresistibles. 
+            Cada bocado es una explosión de sabor, con la suavidad del aguacate fresco contrastando con la crujiente y aromática masa de la focaccia. 
+            Aderezada con aceite de oliva, sal marina y hierbas frescas, nuestra focaccia es una experiencia gastronómica que te transportará a las costas mediterráneas con cada mordisco. 
+            En nuestro restaurante, te invitamos a descubrir el encanto y la exquisitez de nuestra Focaccia de Aguacate.</p>
           <div class="rating">★★★★★</div>
           <p class="product-price">$17.000</p>
           <button data-id="14">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="product-modal" id="productModal">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          <img id="modalImg" src="" alt="">
+          <div id="modalContent">
+            <p id="modalName"></p>
+            <p id="modalDescription"></p>
+          </div>
         </div>
       </div>
   </div>
@@ -204,6 +233,7 @@
      <!--Fin del footer -->
 
   <!-- Scripts -->
+  <script src="../js/modal-descripcion.js"></script>
   <script src="../js/modal-shop.js"></script>
   <script src="../js/paginacion.js"></script>
   <script src="../js/carrito.js"></script>
