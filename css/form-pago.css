@@ -63,17 +63,17 @@ body {
   }
 
   #custom-alert {
-    display: none; /* Hide the alert initially */
-    position: fixed; /* Position it relative to the viewport */
+    display: none; 
+    position: fixed; 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the alert */
-    z-index: 1000; /* Ensure it's on top of other elements */
-    background-color: #3dd050; /* Light background color */
-    border: 1px solid #36801b; /* Border for visual separation */
+    transform: translate(-50%, -50%); 
+    z-index: 1000; 
+    background-color: #3dd050; 
+    border: 1px solid #36801b; 
     padding: 20px;
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
   }
   
   .alert-content {

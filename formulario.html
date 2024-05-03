@@ -20,7 +20,7 @@
 <body>
   <!-- Inicio del header -->
   <header class="header">
-    <p>¡Un encuentro con el sabor!</p>
+    <p>Pide tu domicilio <a href="productos.html">aquí</a></p>
   </header>
 
   <!-- Inicio del nav -->
@@ -28,10 +28,10 @@
     <ul class="menu">
       <li class="logo"><a href="Index.html"><img src="img/Serendipia.png" alt="Logo de Serendipia"></a></li>
       <li class="item"><a href="Index.html">Home</a></li>
-      <li class="item"><a href="#nosotros">Nosotros</a></li>
-      <li class="item"><a href="#productos">Productos</a></li>
-      <li class="item"><a href="#domicilios">Domicilios</a></li>
-      <li class="item"><a href="#location-section">Ubicación</a></li>
+      <li class="item"><a href="Index.html">Nosotros</a></li>
+      <li class="item"><a href="Index.html">Productos</a></li>
+      <li class="item"><a href="Index.html">Domicilios</a></li>
+      <li class="item"><a href="Index.html">Ubicación</a></li>
       <li class="item carrito">
         <a href="#" id="cartBtn">
           <i class="fa fa-shopping-cart"></i>
@@ -73,13 +73,21 @@
 
   <h1>Formulario de Pago</h1>
   <form id="payment-form">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required><br>
+    <label for="nombre">Nombres:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required><br>
 
     <label for="apellidos">Apellidos:</label>
-    <input type="text" id="apellidos" name="apellidos" required><br>
+    <input type="text" id="apellidos" name="apellidos" placeholder="Escriba sus apellidos" required><br>
 
-    <label for="tarjeta">Número de Tarjeta:</label>
+    <label for="tipo-documento">Tipo de Documento:</label>
+    <select id="tipo-documento" name="tipo-documento" required>
+      <option value="seleccione">Seleccione</option>
+      <option value="TI">Tarjeta de Identidad</option>
+      <option value="CC">Cédula de Ciudadanía</option>
+      <option value="CE">Cédula de Extranjería</option>
+    </select><br>
+
+    <label for="tarjeta">Número de Documento:</label>
     <input type="text" id="tarjeta" name="tarjeta" required><br>
 
     <label for="tipo-pago">Tipo de Pago:</label>
@@ -91,26 +99,23 @@
       <option value="efectivo">Efectivo</option>
     </select><br>
 
-    <label for="pais">País:</label>
-    <input type="text" id="pais" name="pais" required><br>
+    <label for="ciudad">Ciudad:</label>
+    <input type="text" id="ciudad" name="ciudad" required><br>
 
     <label for="direccion">Dirección:</label>
     <input type="text" id="direccion" name="direccion" required><br>
-
-    <label for="ciudad">Ciudad:</label>
-    <input type="text" id="ciudad" name="ciudad" required><br>
 
     <label for="barrio">Barrio:</label>
     <input type="text" id="barrio" name="barrio"><br>
 
     <label for="otro">Otro:</label>
-    <input type="text" id="otro" name="otro"><br>
+    <input type="text" id="otro" name="otro" placeholder="Apto, Edificio, etc"><br>
 
     <label for="celular">Celular:</label>
     <input type="tel" id="celular" name="celular" required><br>
 
     <label for="correo">Correo Electrónico:</label>
-    <input type="email" id="correo" name="correo" required><br>
+    <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com" required><br>
 
     <button type="submit" id="pagar-btn">Pagar</button>
   </form>

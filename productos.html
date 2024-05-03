@@ -21,7 +21,7 @@
 <body>
   <!-- Inicio del header -->
   <header class="header">
-    <p>¡Un encuentro con el sabor!</p>
+    <p>Pide tu domicilio <a href="productos.html">aquí</a></p>
   </header>
 
   <!-- Inicio del nav -->
@@ -93,7 +93,11 @@
     <div class="product">
       <img src="img/foto16.jpg" alt="Red Velvet Torta">
       <div class="product-info">
-        <p>Porción-Torta Red Velvet</p>
+        <p class="product-name">Porción-Torta Red Velvet</p>
+        <p class="product-description">Sumérgete en la tentación de nuestra torta Red Velvet. 
+          Cada bocado es un deleite para los sentidos, con su distintivo color rojo, su textura esponjosa y su sabor inconfundible a vainilla y cacao. 
+          Déjate seducir por esta exquisita creación, coronada con una suave y cremosa cobertura de queso crema. En nuestro restaurante, 
+          te invitamos a disfrutar de la indulgencia en cada porción de nuestra torta Red Velvet.</p>
         <div class="rating">★★★★★</div>
         <p class="product-price">$14.000</p>
         <button data-id="1">Añadir al carrito</button>
@@ -103,7 +107,11 @@
     <div class="product">
         <img src="img/foto17.jpg" alt="Capuccino con chai">
         <div class="product-info">
-          <p>Capuccino con Chai</p>
+          <p class="product-name">Capuccino con Chai</p>
+          <p class="product-description">Deléitate con la armonía de nuestro capuccino con chai. 
+            Cada sorbo es un viaje de sabores exóticos y reconfortantes, fusionando la intensidad del chai con la suavidad del capuccino.
+            Disfruta de esta deliciosa bebida caliente, perfecta para relajarte y disfrutar de un momento de indulgencia. 
+            En nuestro restaurante, te invitamos a saborear la magia en cada taza de nuestro capuccino con chai.</p>
           <div class="rating">★★★★★</div>
           <p class="product-price">$9.000</p>
           <button data-id="2">Añadir al carrito</button>
@@ -113,7 +121,11 @@
       <div class="product">
         <img src="img/foto18.jpg" alt="Soda">
         <div class="product-info">
-          <p>Soda</p>
+          <p class="product-name">Soda</p>
+          <p class="product-description">Sumérgete en la frescura efervescente de nuestra soda. 
+            Cada sorbo es una explosión de sabores, desde los clásicos hasta los más exóticos. 
+            Refréscate con esta deliciosa bebida carbonatada, perfecta para acompañar cualquier comida o simplemente disfrutar en cualquier momento del día. 
+            En nuestro restaurante, te invitamos a descubrir la alegría en cada burbuja de nuestra soda.</p>
           <div class="rating">★★★★☆</div>
           <p class="product-price">$6.000</p>
           <button data-id="3">Añadir al carrito</button>
@@ -123,7 +135,11 @@
       <div class="product">
         <img src="img/foto19.jpg" alt="Porción - Torta Chcolate">
         <div class="product-info">
-          <p>Porción - Torta Chocolate</p>
+          <p class="product-name">Porción - Torta Chocolate</p>
+          <p class="product-description">Descubre el placer indulgente de nuestra torta de chocolate. 
+            Sumérgete en capas suaves y esponjosas de cacao puro, deleitando tus sentidos con cada bocado. 
+            Nuestro postre secreto, con su glaseado exquisito, es la indulgencia perfecta para los amantes del chocolate. 
+            No podrás resistirte a este manjar en nuestro restaurante..</p>
           <div class="rating">★★★★★</div>
           <p class="product-price">$14.000</p>
           <button data-id="4">Añadir al carrito</button>
@@ -179,6 +195,18 @@
           <button data-id="9">Añadir al carrito</button>
         </div>
       </div>
+
+      <div class="product-modal" id="productModal">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          <img id="modalImg" src="" alt="">
+          <div id="modalContent">
+            <p id="modalName"></p>
+            <p id="modalDescription"></p>
+          </div>
+        </div>
+      </div>
+
   </div>
 </div>
 <div class="pagination">
@@ -263,6 +291,7 @@
      <!--Fin del footer -->
 
   <!-- Scripts -->
+  <script src="js/modal-descripcion.js"></script>
   <script src="js/form-pago.js"></script>
   <script src="js/modal-shop.js"></script>
   <script src="js/paginacion.js"></script>
