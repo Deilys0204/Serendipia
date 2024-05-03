@@ -21,7 +21,7 @@
 <body>
   <!-- Inicio del header -->
   <header class="header">
-    <p>¡Un encuentro con el sabor!</p>
+    <p>Pide tu domicilio <a href="../productos.html">aquí</a></p>
   </header>
 
   <!-- Inicio del nav -->
@@ -35,7 +35,7 @@
         <li class="item"><a href="../Index.html">Ubicación</a></li>
         <li class="item carrito">
           <a href="#" id="cartBtn">
-            <i class="fa fa-shopping-cart"></i>
+            <i class="fa fa-shopping-cart fa-lg"></i>
             <span class="cart-badge">0</span> </a>
         </li>
         <li class="toggle"><a href="#"><i class="fa fa-bars fa-lg"></i></a></li>
@@ -93,7 +93,11 @@
     <div class="product">
       <img src="../img/foto25.jpg" alt="Calentado de Frijol Montañero">
       <div class="product-info">
-        <p>Calentado de Frijol Montañero</p>
+        <p class="product-name">Calentado de Frijol Montañero</p>
+        <p class="product-description">Deléitate con la calidez y el sabor reconfortante de nuestro Calentado de Frijol Montañero. 
+          Cada plato es una oda a la cocina tradicional, con una mezcla de frijoles cocidos a fuego lento, arroz blanco y carne de cerdo o res, sazonados con especias aromáticas y hierbas frescas. 
+          Esta deliciosa combinación es un festín para el paladar, ofreciendo una experiencia culinaria auténtica y satisfactoria. 
+          En nuestro restaurante, te invitamos a disfrutar de la riqueza y la abundancia de nuestro Calentado de Frijol Montañero.</p>
         <div class="rating">★★★★★</div>
         <p class="product-price">$18.000</p>
         <button data-id="10">Añadir al carrito</button>
@@ -103,10 +107,25 @@
     <div class="product">
       <img src="../img/foto20.jpg" alt="Calentado de Arroz del Pacífico">
       <div class="product-info">
-        <p>Calentado de Arroz del Pacífico</p>
+        <p class="product-name">Calentado de Arroz del Pacífico</p>
+          <p class="product-description">Embárcate en un viaje culinario con nuestro Calentado de Arroz del Pacífico. 
+            Cada cucharada te transportará a las costas del Pacífico, con su mezcla única de sabores y aromas. 
+            Disfruta de este plato reconfortante, elaborado con arroz al vapor, frijoles, carne y un toque de especias que despiertan los sentidos. 
+            En nuestro restaurante, te invitamos a descubrir la riqueza gastronómica del Pacífico en cada bocado de nuestro Calentado de Arroz.</p>
         <div class="rating">★★★★★</div>
         <p class="product-price">$18.500</p>
         <button data-id="5">Añadir al carrito</button>
+      </div>
+    </div>
+
+    <div class="product-modal" id="productModal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <img id="modalImg" src="" alt="">
+        <div id="modalContent">
+          <p id="modalName"></p>
+          <p id="modalDescription"></p>
+        </div>
       </div>
     </div>
     </div>
@@ -185,6 +204,7 @@
      <!--Fin del footer -->
 
   <!-- Scripts -->
+  <script src="../js/modal-descripcion.js"></script>
   <script src="../js/modal-shop.js"></script>
   <script src="../js/paginacion.js"></script>
   <script src="../js/carrito.js"></script>
