@@ -21,7 +21,7 @@
 <body>
   <!-- Inicio del header -->
   <header class="header">
-    <p>¡Un encuentro con el sabor!</p>
+    <p>Pide tu domicilio <a href="../productos.html">aquí</a></p>
   </header>
 
   <!-- Inicio del nav -->
@@ -35,7 +35,7 @@
         <li class="item"><a href="../Index.html">Ubicación</a></li>
         <li class="item carrito">
           <a href="#" id="cartBtn">
-            <i class="fa fa-shopping-cart"></i>
+            <i class="fa fa-shopping-cart fa-lg"></i>
             <span class="cart-badge">0</span> </a>
         </li>
         <li class="toggle"><a href="#"><i class="fa fa-bars fa-lg"></i></a></li>
@@ -93,7 +93,11 @@
     <div class="product">
         <img src="../img/foto31.jpg" alt="Omelette">
         <div class="product-info">
-          <p>Omelette</p>
+          <p class="product-name">Omelette</p>
+          <p class="product-description">Disfruta de la frescura y la versatilidad de nuestro omelette. 
+            Preparado con los ingredientes más frescos y de la más alta calidad, nuestro omelette es una obra maestra de la cocina. 
+            Desde el clásico omelette francés con queso y hierbas frescas, hasta opciones más creativas con verduras de temporada y proteínas magras, cada creación es una combinación perfecta de sabor y textura. Ya sea para el desayuno, el almuerzo o la cena, nuestro omelette es una opción deliciosa y satisfactoria que seguro te dejará con ganas de más. 
+            En nuestro restaurante, te invitamos a descubrir el placer de nuestro omelette preparado a la perfección.</p>
           <div class="rating">★★★★★</div>
           <p class="product-price">$17.000</p>
           <button data-id="16">Añadir al carrito</button>
@@ -103,7 +107,12 @@
       <div class="product">
         <img src="../img/foto32.jpg" alt="Caldereta de Chorizo">
         <div class="product-info">
-          <p>Caldereta de Chorizo</p>
+          <p class="product-name">Caldereta de Chorizo</p>
+          <p class="product-description">Disfruta de la auténtica calidez y el sabor reconfortante de nuestra Caldereta de Chorizo. 
+            Preparada con chorizo ​​de primera calidad y una mezcla de verduras frescas, nuestra caldereta es una explosión de sabores que deleitará tus papilas gustativas. 
+            Cada cucharada es una experiencia de sabor intensa y satisfactoria que te transportará a la cocina casera tradicional. 
+            Con su mezcla única de especias y su textura rica y reconfortante, nuestra caldereta es el plato perfecto para disfrutar en cualquier ocasión. 
+            En nuestro restaurante, te invitamos a probar la deliciosa autenticidad de nuestra Caldereta de Chorizo.</p>
           <div class="rating">★★★★★</div>
           <p class="product-price">$18.000</p>
           <button data-id="17">Añadir al carrito</button>
@@ -113,7 +122,11 @@
       <div class="product">
         <img src="../img/foto36.jpg" alt="Tortilla Tailandesa">
         <div class="product-info">
-          <p>Tortilla Tailandesa</p>
+          <p class="product-name">Tortilla Tailandesa</p>
+          <p class="product-description">La Tortilla Tailandesa es una deliciosa y aromática opción culinaria que combina la tradición de la tortilla con los sabores únicos de Tailandia. 
+            Preparada con ingredientes frescos y especias aromáticas, esta tortilla es una fusión de sabores dulces, salados y picantes que deleitará tus papilas gustativas. 
+            Con una mezcla de verduras frescas, hierbas tailandesas, y opcionalmente camarones o pollo, cada bocado es una aventura culinaria que te transportará a los exóticos sabores del sudeste asiático. 
+            En nuestro restaurante, te invitamos a disfrutar de la auténtica experiencia de nuestra Tortilla Tailandesa y a descubrir un nuevo mundo de sabores.</p>
           <div class="rating">★★★★☆</div>
           <p class="product-price">$18.000</p>
           <button data-id="21">Añadir al carrito</button>
@@ -123,10 +136,24 @@
       <div class="product">
         <img src="../img/foto37.jpg" alt="Huevos Divorciados">
         <div class="product-info">
-          <p>Huevos Divorciados</p>
+          <p class="product-name">Huevos Divorciados</p>
+          <p class="product-description">Los Huevos Divorciados son un plato mexicano clásico que consiste en dos huevos fritos cubiertos con dos salsas diferentes: una roja y otra verde. 
+            Esta colorida combinación ofrece un festín de sabores auténticos y vibrantes. 
+            En nuestro restaurante, te invitamos a disfrutar de esta delicia tradicional y a deleitarte con la riqueza de la cocina mexicana en cada bocado.</p>
           <div class="rating">★★★★★</div>
           <p class="product-price">$18.000</p>
           <button data-id="22">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="product-modal" id="productModal">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          <img id="modalImg" src="" alt="">
+          <div id="modalContent">
+            <p id="modalName"></p>
+            <p id="modalDescription"></p>
+          </div>
         </div>
       </div>
   </div>
@@ -204,6 +231,7 @@
      <!--Fin del footer -->
 
   <!-- Scripts -->
+  <script src="../js/modal-descripcion.js"></script>
   <script src="../js/modal-shop.js"></script>
   <script src="../js/paginacion.js"></script>
   <script src="../js/carrito.js"></script>

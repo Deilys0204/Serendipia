@@ -21,7 +21,7 @@
 <body>
   <!-- Inicio del header -->
   <header class="header">
-    <p>¡Un encuentro con el sabor!</p>
+    <p>Pide tu domicilio <a href="../productos.html">aquí</a></p>
   </header>
 
   <!-- Inicio del nav -->
@@ -35,7 +35,7 @@
         <li class="item"><a href="../Index.html">Ubicación</a></li>
         <li class="item carrito">
           <a href="#" id="cartBtn">
-            <i class="fa fa-shopping-cart"></i>
+            <i class="fa fa-shopping-cart fa-lg"></i>
             <span class="cart-badge">0</span> </a>
         </li>
         <li class="toggle"><a href="#"><i class="fa fa-bars fa-lg"></i></a></li>
@@ -93,7 +93,12 @@
   <div class="product">
     <img src="../img/foto30.jpg" alt="Chicharrones">
     <div class="product-info">
-      <p>Chicharrones</p>
+      <p class="product-name">Chicharrones</p>
+          <p class="product-description">Sumérgete en el sabor y la textura crujiente de nuestros chicharrones. 
+            Preparados con maestría, nuestros chicharrones son un festín para los sentidos.
+            Cada bocado es una explosión de sabor, con la combinación perfecta de crujiente y salado que los convierte en el acompañamiento ideal para cualquier ocasión. 
+            Ya sea que los disfrutes como aperitivo o como parte de un plato principal, nuestros chicharrones son una delicia irresistible que te dejará con ganas de más. 
+            En nuestro restaurante, te invitamos a deleitarte con la auténtica experiencia de nuestros chicharrones.</p>
       <div class="rating">★★★☆☆</div>
       <p class="product-price">$12.000</p>
       <button data-id="15">Añadir al carrito</button>
@@ -103,16 +108,29 @@
   <div class="product">
     <img src="../img/foto39.jpg" alt="Colada de Achira">
     <div class="product-info">
-      <p>Colada de Achira</p>
+      <p class="product-name">Colada de Achira</p>
+      <p class="product-description">La Colada de Achira es una bebida tradicional de los Andes, elaborada con harina de achira, agua y azúcar. 
+        Conocida por su sabor reconfortante y textura cremosa, es una opción nutritiva y deliciosa para disfrutar en cualquier momento del día. 
+        En nuestro restaurante, te invitamos a probar esta bebida andina y a explorar los sabores únicos de la región.</p>
       <div class="rating">★★★☆☆</div>
       <p class="product-price">$8.000</p>
       <button data-id="24">Añadir al carrito</button>
     </div>
   </div>
+
+  <div class="product-modal" id="productModal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img id="modalImg" src="" alt="">
+      <div id="modalContent">
+        <p id="modalName"></p>
+        <p id="modalDescription"></p>
+      </div>
     </div>
   </div>
+  </div>
 </div>
-</div>
+
 
   <!-- Inicio del footer -->
   <footer class="bg-dark" id="tempaltemo_footer">
@@ -186,6 +204,7 @@
      <!--Fin del footer -->
 
   <!-- Scripts -->
+  <script src="../js/modal-descripcion.js"></script>
   <script src="../js/modal-shop.js"></script>
   <script src="../js/paginacion.js"></script>
   <script src="../js/carrito.js"></script>

@@ -21,7 +21,7 @@
 <body>
   <!-- Inicio del header -->
   <header class="header">
-    <p>¡Un encuentro con el sabor!</p>
+    <p>Pide tu domicilio <a href="../productos.html">aquí</a></p>
   </header>
 
   <!-- Inicio del nav -->
@@ -35,7 +35,7 @@
         <li class="item"><a href="../Index.html">Ubicación</a></li>
         <li class="item carrito">
           <a href="#" id="cartBtn">
-            <i class="fa fa-shopping-cart"></i>
+            <i class="fa fa-shopping-cart fa-lg"></i>
             <span class="cart-badge">0</span> </a>
         </li>
         <li class="toggle"><a href="#"><i class="fa fa-bars fa-lg"></i></a></li>
@@ -93,7 +93,11 @@
     <div class="product">
       <img src="../img/foto16.jpg" alt="Red Velvet Torta">
       <div class="product-info">
-        <p>Porción-Torta Red Velvet</p>
+        <p class="product-name">Porción-Torta Red Velvet</p>
+        <p class="product-description">Sumérgete en la tentación de nuestra torta Red Velvet. 
+          Cada bocado es un deleite para los sentidos, con su distintivo color rojo, su textura esponjosa y su sabor inconfundible a vainilla y cacao. 
+          Déjate seducir por esta exquisita creación, coronada con una suave y cremosa cobertura de queso crema. En nuestro restaurante, 
+          te invitamos a disfrutar de la indulgencia en cada porción de nuestra torta Red Velvet.</p>
         <div class="rating">★★★★★</div>
         <p class="product-price">$14.000</p>
         <button data-id="1">Añadir al carrito</button>
@@ -103,7 +107,11 @@
     <div class="product">
         <img src="../img/foto19.jpg" alt="Porción - Torta Chcolate">
         <div class="product-info">
-          <p>Porción - Torta Chocolate</p>
+          <p class="product-name">Porción - Torta Chocolate</p>
+          <p class="product-description">Descubre el placer indulgente de nuestra torta de chocolate. 
+            Sumérgete en capas suaves y esponjosas de cacao puro, deleitando tus sentidos con cada bocado. 
+            Nuestro postre secreto, con su glaseado exquisito, es la indulgencia perfecta para los amantes del chocolate. 
+            No podrás resistirte a este manjar en nuestro restaurante.</p>
           <div class="rating">★★★★★</div>
           <p class="product-price">$14.000</p>
           <button data-id="4">Añadir al carrito</button>
@@ -113,7 +121,12 @@
     <div class="product">
         <img src="../img/foto24.jpg" alt="Velvetina">
         <div class="product-info">
-          <p>Velvetina</p>
+          <p class="product-name">Velvetina</p>
+          <p class="product-description">Déjate seducir por la elegancia y el sabor refinado de nuestra Velvetina. 
+            Cada porción de esta exquisita creación es una experiencia indulgente, con capas de bizcocho delicado y suave, rellenas de una crema lujosa y 
+            adornadas con detalles finos y sabores sutiles. 
+             su textura sedosa hasta su presentación impecable, la Velvetina es la elección perfecta para aquellos que buscan una experiencia gourmet. 
+             En nuestro restaurante, te invitamos a saborear la sofisticación y el encanto de nuestra Velvetina.</p>
           <div class="rating">★★★★★</div>
           <p class="product-price">$18.000</p>
           <button data-id="9">Añadir al carrito</button>
@@ -123,11 +136,27 @@
     <div class="product">
         <img src="../img/foto26.jpg" alt="Crookies">
         <div class="product-info">
-          <p>Crookies</p>
+          <p class="product-name">Crookies</p>
+          <p class="product-description">Los Crookies son una deliciosa fusión de dos clásicos favoritos: los croissants y las galletas. 
+            Con su exterior crujiente y su interior suave y mantecoso, estas galletas ofrecen lo mejor de ambos mundos. 
+            Cada bocado es una experiencia de sabor única, con notas de mantequilla, almendra y un toque de dulzura. 
+            Perfectas para disfrutar en cualquier momento del día, ya sea con una taza de café por la mañana o como un dulce tentempié por la tarde. 
+            En nuestro restaurante, te invitamos a descubrir la magia de los Crookies y a deleitarte con su exquisito sabor.</p>
           <div class="rating">★★★★★</div>
           <p class="product-price">$12.000</p>
           <button data-id="11">Añadir al carrito</button>
         </div>
+    </div>
+
+    <div class="product-modal" id="productModal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <img id="modalImg" src="" alt="">
+        <div id="modalContent">
+          <p id="modalName"></p>
+          <p id="modalDescription"></p>
+        </div>
+      </div>
     </div>
   </div>
   </div>
@@ -204,6 +233,7 @@
      <!--Fin del footer -->
 
   <!-- Scripts -->
+  <script src="../js/modal-descripcion.js"></script>
   <script src="../js/modal-shop.js"></script>
   <script src="../js/paginacion.js"></script>
   <script src="../js/carrito.js"></script>

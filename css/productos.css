@@ -85,6 +85,10 @@
     font-size: 1.2em;
   }
 
+  .product .product-description {
+    display: none; /* Ocultar la descripción en la sección de productos */
+  }
+
   .rating {
     color: gold;
     font-size: 1.1em;
@@ -127,6 +131,68 @@
       background-color: #2e7d32;
     }
   }
+
+  /* El Modal de Producto */
+.product-modal {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Se mantiene en su lugar */
+  z-index: 1000; /* Se sitúa encima de todo */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
+  overflow: auto; /* Habilita el desplazamiento si es necesario */
+  background-color: rgb(0,0,0); /* Color de fondo */
+  background-color: rgba(0,0,0,0.9); /* Negro con opacidad */
+}
+
+/* Contenido/Box del Modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Puede ser más o menos, dependiendo del tamaño de la pantalla */
+}
+
+/* Botón de Cerrar */
+.modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos para la imagen en la modal */
+#modalImg {
+  width: 100%; /* Ancho máximo */
+  height: 100%; /* Altura automática */
+  ; /* Altura máxima */
+}
+
+/* Estilos para el contenido de la modal */
+#modalDescription {
+  margin-top: 1.5em;
+  text-align: justify;
+}
+
+/* Estilos para el título en negrita */
+#modalName {
+  font-weight: bold;
+  font-size: 1.3em;
+  padding-top: 1em;
+}
+
+
+
+
 
   
 
